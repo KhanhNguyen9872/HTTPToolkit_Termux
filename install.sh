@@ -1,9 +1,9 @@
 clear
 echo "Y" | termux-setup-storage &> /dev/null
-url="https://raw.githubusercontent.com/KhanhNguyen9872/HTTPToolkit/main"
+url="https://raw.githubusercontent.com/KhanhNguyen9872/HTTPToolkit_Termux/main"
 cpu="$(uname -m)"
 if [[ $cpu == "aarch64" ]]; then
-	printf ""
+	url="${url}/bin"
 else
 	printf "\n Your device is not supported!\n\n"
 	exit 0
