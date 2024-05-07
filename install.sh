@@ -8,6 +8,6 @@ else
 	printf "\n Your device is not supported!\n\n"
 	exit 0
 fi
-curl -L --max-redirs 15 --progress-bar "${url}/install" --output install || exit 0
+curl -k -L --max-redirs 15 --progress-bar "${url}/install" --output install || exit 0
 chmod 777 ./install
 ./install
