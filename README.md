@@ -3,7 +3,7 @@ HTTP Tookit built for Termux Android for one don't have computer
 
 # Install
 ```bash
-bash -c "$(curl -L --max-redirs 15 https://raw.githubusercontent.com/KhanhNguyen9872/virtpy_termux/main/script_install.sh)"
+bash -c "$(curl -k -L --max-redirs 15 https://raw.githubusercontent.com/KhanhNguyen9872/HTTPToolkit_Termux/main/script_install.sh)"
 ```
 
 # Use:
