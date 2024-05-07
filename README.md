@@ -16,6 +16,9 @@ bash -c "$(curl -k -L --max-redirs 15 https://raw.githubusercontent.com/KhanhNgu
 7. Now you can use `Start Chromium` and `Get script for termux`
 8. Enjoy yourself
 
+# Issue
+* If you got `uv_interface_addresses returned Unknown system error 13 (Unknown system error 13)` -> android has blocked access `/proc/net`, you must change SELinux to Permissive by using `setenforce 0`, if can't change, you must have root on your device (`sudo setenforce 0`)
+
 # Screenshot
 
 <img alt="img000" src="https://github.com/KhanhNguyen9872/HTTPToolkit_Termux/raw/main/img/img000.jpg" />
