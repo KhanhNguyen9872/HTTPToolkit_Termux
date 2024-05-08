@@ -17,7 +17,6 @@ bash -c "$(curl -k -L --max-redirs 15 https://raw.githubusercontent.com/KhanhNgu
 8. Enjoy yourself
 
 # Known issues
-* Android 12+ may block some folder in `/proc`, displaying `uv_interface_addresses returned Unknown system error 13 (Unknown system error 13)`. To resolve this, you must change SELinux to Permissive by using `setenforce 0`, if can't change, you must have root access on your device to change SELinux (`sudo setenforce 0`) or run httptoolkit as root permission (`sudo httptoolkit`)
 * Android 12+ may terminate Termux, displaying `[Process completed (signal 9) - press Enter]`. Use this command to resolve it `/system/bin/device_config put activity_manager max_phantom_processes 2147483647`. You can use adb or root to run this command.
 
 # Screenshot
