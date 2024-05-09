@@ -1,5 +1,5 @@
 # HTTPToolkit_Termux
-HTTP Tookit built for Termux Android for one don't have computer
+HTTP Tookit built for Termux Android for anyone don't have computer
 
 # Install
 ```bash
@@ -10,11 +10,9 @@ bash -c "$(curl -k -L --max-redirs 15 https://raw.githubusercontent.com/KhanhNgu
 1. Install it first
 2. Run `httptoolkit` in termux
 3. Choose `Start HTTP Toolkit` and wait
-4. When started, go to link by using Browser (you will see it)
-5. Choose `Existing Terminal` in website when you can see this
-6. Make sure after choose in [5] have this -> `curl -sS localhost:8001/setup`
-7. Now you can use `Start Chromium` and `Get script for termux`
-8. Enjoy yourself
+4. When started, you will see IP `127.0.0.1:1` with password, use RealVNC (or another app) to connect this IP VNC
+5. If you want `Intercept Termux terminal`, choose `Get script for Termux terminal`, copy code and go to another tab (session), paste it and run
+6. If you want `Intercept Chromium`, choose it in HTTP Toolkit website, new chromium will open
 
 # Known issues
 * Android 12+ may terminate Termux, displaying `[Process completed (signal 9) - press Enter]`. Use this command to resolve it `/system/bin/device_config put activity_manager max_phantom_processes 2147483647`. You can use adb or root to run this command.
